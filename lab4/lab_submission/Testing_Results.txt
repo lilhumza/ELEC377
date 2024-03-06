@@ -1,0 +1,16 @@
+Test Cases and Solution: Several cases were tested for the various flags that can be used. All tests can be seen under the test results directory with the respective tests being labeled accordingly in a subdirectory, each subdirectory having a system.txt file representing the native ps command execution that was piped to a text file, and a lab.txt which represents the shell script execution piped to a text file.
+
+Note: To avoid redundancy, not all permutations of flags have been tested; focusing on essential trends was prioritized. While acknowledging the unoptimized formatting with headers and values, the intention was to align with the native output size of the OS (Ubuntu). This choice aimed at mirroring the potential maximum size inherent in the operating system, rather than relying on specific output seen in test cases or counting characters in those outputs.
+
+no_flags: What is seen between the system.txt and lab.txt is a successful execution of the shell script in producing a similar output as the native ps command does. The differences noted are where the system reports UID as daemon, and the lab reports it as root which may be due to the mapping that occurs in the script. Otherwise, the outputs are identical and very much successful.
+
+cmd_comm_error: What is observed in the two test cases here is using both the -comm and -command flags which are expected to result in an error, as well as using an unrecognized flag which similarly results in an error. Both cases can be seen in lab.txt and lab unrecognized.txt respectively, performing as intended with the printing of error messages, indicative of the handling of error cases.
+
+group_comm: The tested flags, in this case, are the -group and -comm flags, where both the system.txt and lab.txt are identical, with the exception of formatting of the headers in the lab.txt. However, in regards to the actual data values observed, they are identical, a noticeable observation being for the UID which is a netID, the corresponding group is sysops. Overall a successful case observation.
+
+all_flags_cmd: This case covers all flags except the -comm flag, meaning it has the -command flag. What is observed is the successful execution as intended for the lab.txt in comparison to the system.txt, a noticeable difference being in the system.txt the commands are enclosed in [] whereas the lab.txt solely has the command. Regardless, in the grand scheme, the evaluation is very much successful.
+
+all_flags_comm: Similar to the very previous case tested, however inclusive of the -comm flag and does not have the -command flag. What is observed is the successful execution as intended for the lab.txt in comparison to the system.txt, a noticeable difference is the last line and its value for comm, where the system.txt has the ps command, the lab.txt has the ps.sh command denoting the different executions being made for the testing case. Overall a successful case observation.
+
+The testing of the ps.sh script demonstrates that it effectively lists running processes with various levels of detail based on the specified flags. The script accurately retrieves and displays process information from the Linux system, adhering to the requirements of the lab assignment
+

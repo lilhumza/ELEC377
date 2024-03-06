@@ -1,0 +1,105 @@
+PID    USER                            RSS                             CMD                             GROUP                           
+1      root                            10092                           /sbin/init                      root                            
+2      root                                                            kthreadd                        root                            
+3      root                                                            rcu_gp                          root                            
+4      root                                                            rcu_par_gp                      root                            
+6      root                                                            kworker/0:0H-kblockd            root                            
+8      root                                                            mm_percpu_wq                    root                            
+9      root                                                            ksoftirqd/0                     root                            
+10     root                                                            rcu_sched                       root                            
+11     root                                                            migration/0                     root                            
+12     root                                                            idle_inject/0                   root                            
+14     root                                                            cpuhp/0                         root                            
+15     root                                                            kdevtmpfs                       root                            
+16     root                                                            netns                           root                            
+17     root                                                            rcu_tasks_kthre                 root                            
+18     root                                                            kauditd                         root                            
+19     root                                                            khungtaskd                      root                            
+20     root                                                            oom_reaper                      root                            
+21     root                                                            writeback                       root                            
+22     root                                                            kcompactd0                      root                            
+23     root                                                            ksmd                            root                            
+24     root                                                            khugepaged                      root                            
+70     root                                                            kintegrityd                     root                            
+71     root                                                            kblockd                         root                            
+72     root                                                            blkcg_punt_bio                  root                            
+73     root                                                            tpm_dev_wq                      root                            
+74     root                                                            ata_sff                         root                            
+75     root                                                            md                              root                            
+76     root                                                            edac-poller                     root                            
+77     root                                                            devfreq_wq                      root                            
+78     root                                                            watchdogd                       root                            
+80     root                                                            kswapd0                         root                            
+81     root                                                            ecryptfs-kthrea                 root                            
+83     root                                                            kthrotld                        root                            
+84     root                                                            acpi_thermal_pm                 root                            
+85     root                                                            khvcd                           root                            
+86     root                                                            scsi_eh_0                       root                            
+87     root                                                            scsi_tmf_0                      root                            
+88     root                                                            scsi_eh_1                       root                            
+89     root                                                            scsi_tmf_1                      root                            
+91     root                                                            vfio-irqfd-clea                 root                            
+93     root                                                            ipv6_addrconf                   root                            
+102    root                                                            kstrp                           root                            
+105    root                                                            kworker/u3:0                    root                            
+118    root                                                            charger_manager                 root                            
+152    root                                                            kworker/0:1H-kblockd            root                            
+197    root                                                            raid5wq                         root                            
+240    root                                                            jbd2/vda1-8                     root                            
+241    root                                                            ext4-rsv-conver                 root                            
+276    root                                                            hwrng                           root                            
+314    root                            17584                           /lib/systemd/systemd-journald   root                            
+337    root                            504                             bpfilter_umh                    root                            
+367    root                            4708                            /lib/systemd/systemd-udevd      root                            
+501    root                                                            kaluad                          root                            
+502    root                                                            kmpath_rdacd                    root                            
+503    root                                                            kmpathd                         root                            
+504    root                                                            kmpath_handlerd                 root                            
+505    root                            18000                           /sbin/multipathd-d-s            root                            
+513    root                                                            loop0                           root                            
+518    root                                                            loop1                           root                            
+522    root                                                            loop2                           root                            
+523    root                                                            loop3                           root                            
+540    systemd-timesync                3068                            /lib/systemd/systemd-timesyncd  systemd-timesync                
+597    systemd-network                 2508                            /lib/systemd/systemd-networkd   systemd-network                 
+599    systemd-resolve                 6952                            /lib/systemd/systemd-resolved   systemd-resolve                 
+634    root                            3740                            /usr/lib/accountsservice/accounts-daemonroot                            
+637    root                            2296                            /usr/sbin/cron-f                root                            
+638    messagebus                      4188                            /usr/bin/dbus-daemon--system--address=systemd:--nofork--nopidfile--systemd-activation--syslog-onlymessagebus                      
+646    root                            11108                           /usr/bin/python3/usr/bin/networkd-dispatcher--run-startup-triggersroot                            
+647    root                            2300                            /usr/lib/policykit-1/polkitd--no-debugroot                            
+648    root                            148                             /usr/sbin/qemu-ga               root                            
+649    syslog                          3108                            /usr/sbin/rsyslogd-n-iNONE      syslog                          
+653    root                            5496                            /lib/systemd/systemd-logind     root                            
+655    root                            4748                            /usr/lib/udisks2/udisksd        root                            
+656    root                            2128                            /usr/sbin/atd-f                 root                            
+665    root                            1716                            /sbin/agetty-o-p -- \u--keep-baud115200,38400,9600hvc0vt220root                            
+666    root                            1808                            /sbin/agetty-o-p -- \u--keep-baud115200,38400,9600ttyS0vt220root                            
+670    root                            1596                            /sbin/agetty-o-p -- \u--nocleartty1linuxroot                            
+693    root                            4452                            sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startupsroot                            
+697    root                            2824                            /usr/sbin/ModemManager          root                            
+715    root                            10592                           /usr/bin/python3/usr/share/unattended-upgrades/unattended-upgrade-shutdown--wait-for-signalroot                            
+4900   root                                                            loop5                           root                            
+20248  root                                                            xfsalloc                        root                            
+20250  root                                                            xfs_mru_cache                   root                            
+114347 root                                                            loop4                           root                            
+114387 root                            20256                           /usr/lib/snapd/snapd            root                            
+231661 root                                                            kworker/0:2-events              root                            
+235873 root                                                            kworker/u2:1-events_power_efficientroot                            
+235875 root                            9828                            sshd: NETID [priv]            root                            
+235885 NETID                         8536                            /lib/systemd/systemd--user      sysops                          
+235886 root                                                            kworker/0:0-events              root                            
+235890 NETID                         4816                            (sd-pam)                        sysops                          
+235988 NETID                         6844                            sshd: NETID@notty             sysops                          
+235989 NETID                         3568                            bash                            sysops                          
+236062 NETID                         596                             sh/home/NETID/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/bin/code-server--start-server--host=127.0.0.1--accept-server-license-terms--enable-remote-auto-shutdown--port=0--telemetry-levelall--connection-token-file/home/NETID/.vscode-server/.1a5daa3a0231a0fbba4f14db7ec463cf99d7768e.tokensysops                          
+236072 NETID                         97820                           /home/NETID/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/node/home/NETID/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/out/server-main.js--start-server--host=127.0.0.1--accept-server-license-terms--enable-remote-auto-shutdown--port=0--telemetry-levelall--connection-token-file/home/NETID/.vscode-server/.1a5daa3a0231a0fbba4f14db7ec463cf99d7768e.tokensysops                          
+236118 NETID                         67384                           /home/NETID/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/node/home/NETID/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/out/bootstrap-fork--type=ptyHost--logsPath/home/NETID/.vscode-server/data/logs/20231114T164127sysops                          
+236131 NETID                         112828                          /home/NETID/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/node--dns-result-order=ipv4first/home/NETID/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/out/bootstrap-fork--type=extensionHost--transformURIs--useHostProxy=falsesysops                          
+236146 NETID                         52476                           /home/NETID/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/node/home/NETID/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/out/bootstrap-fork--type=fileWatchersysops                          
+236228 NETID                         5048                            /bin/bash--init-file/home/NETID/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/out/vs/workbench/contrib/terminal/browser/media/shellIntegration-bash.shsysops                          
+238159 NETID                         5104                            /bin/bash--init-file/home/NETID/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/out/vs/workbench/contrib/terminal/browser/media/shellIntegration-bash.shsysops                          
+276531 root                                                            kworker/u2:0-events_power_efficientroot                            
+279145 NETID                         580                             sleep180                        sysops                          
+279229 root                                                            kworker/u2:2-events_power_efficientroot                            
+279267 NETID                         3300                            /bin/bash./ps.sh-rss-group-commandsysops                          

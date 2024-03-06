@@ -1,0 +1,17 @@
+The following text file depicts the results when having the server actively running on a port, and thereafter interacting with the client to the server sucessfully.
+
+quoteserv:
+
+./quoteserv 10000
+humza
+Return code: 0
+
+client:
+
+./client 10000
+Port Number  10000
+The quote server by Sam Gault, SGaultSoft
+Hi 377 Student, your quote is:
+People have confused playing devil's advocate with being intelligent.
+ -- Cecily Strong
+ 

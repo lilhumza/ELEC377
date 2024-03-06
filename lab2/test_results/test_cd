@@ -1,0 +1,9 @@
+Script started on 2023-10-09 23:53:50-04:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="117" LINES="11"]
+]0;NETID@elec377-tues-am-62: ~/elec377-tues-am-62/lab2[01;32mNETID@elec377-tues-am-62[00m:[01;34m~/elec377-tues-am-62/lab2[00m$ cd ../
+]0;NETID@elec377-tues-am-62: ~/elec377-tues-am-62[01;32mNETID@elec377-tues-am-62[00m:[01;34m~/elec377-tues-am-62[00m$ cd banana [Kswirl
+bash: cd: bananaswirl: No such file or directory
+]0;NETID@elec377-tues-am-62: ~/elec377-tues-am-62[01;32mNETID@elec377-tues-am-62[00m:[01;34m~/elec377-tues-am-62[00m$ cd
+]0;NETID@elec377-tues-am-62: ~[01;32mNETID@elec377-tues-am-62[00m:[01;34m~[00m$ exit
+exit
+
+Script done on 2023-10-09 23:54:11-04:00 [COMMAND_EXIT_CODE="0"]

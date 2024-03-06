@@ -1,0 +1,13 @@
+Test Cases and Solution: While test cases in the context of this lab are more related to the permutations of passwords and brute forcing, the buildup of the various elements to reach the stage of brute forcing is of importance and emphasized respectively. All related data can be seen under the test results directory with the respective files being labeled accordingly. A breakdown of the files is seen further in this documentation.
+
+selfcomp_output.txt: What is seen in this file is the result of running the selfcomp.c file and having the results piped to a text file, the results being a list of all the env variables. What this validates is the successful development of the exploit, the integration of the exploit into the compromise array correctly, and thereafter the overall functionality of it all.
+
+parent_child_results.txt: What is seen in this file is the initial state of the quoteserver and client, the results are observed when having the server actively running on a port, and thereafter interacting with the client to the server successfully. In this case, the server provides the client with a quote.
+
+quoteserv_output.txt: What is seen in this file is the results of interacting with the server from the client piped to the text file. In the text document, because of a successful interaction, all that is seen is a return code 0, indicative of a successful interaction.
+
+client_output.txt: What is seen in this file is the results of interacting with the server from the client. In the text document, because of a successful interaction, what is observed is the successful printing of the environment variables. The variable of importance is the MD5 hash with a value of b155faab775d812dd66ac9fcd4651e36.
+
+testing_password.txt This file entails the scraping of all the related information from the social media posts to create the permutations of passwords used to brute force and match the MD5 hash. The matching password of Tacos26 is detailed in the document. The ever-so-fancy method of brute forcing was fundamentally a guess and check with the various names and numbers detailed in the text file. A more intuitive solution that this course has more than equipped us for was to write a script, given the MD5 hash, and thereafter have the script run through a permutation of strings and integers until a matching hash was found. Evidently, the initiative was not taken.
+
+The overall objective of determining the password, and the development towards achieving the correct password was successful. A key learning aspect was the development of shell code in the x86 AMD architecture and, thereafter the implementation of this shell code in a C program. A very unique interaction between various software and the operating system.

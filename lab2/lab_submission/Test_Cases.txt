@@ -1,0 +1,16 @@
+Test Cases and Solution: 
+Several cases were tested for the various commands the shell was developed for. All tests can be seen under the test results directory.
+
+Exit: The exit command was tested through all test cases after starting the script and executing the respective commands, using exit to stop the shell and terminate all processes. Hence there is no discrete test results file for the exit function, as it can be seen in all test cases. The flow of the exit code within shell.c is as follows ”exitFunc” function is used to run the exit command that stops the program, using the exit system call with a value of 0.
+
+Print Working Directory: The pwd command was tested with several calls, as reflected in the test pwd text file. The ”pwdFunc” function handles the pwd command, and retrieves/shows the path of the current working directory using the ”getcwd” system call. If there’s an error, it shows an error message. It also frees up the memory as calls are made, due to the ”getcwd” inherently allocating memory already. As seen in the results file, the pwd command works as intended and is recorded accordingly in the test pwd.
+
+Change Directory: The cd command was tested with several calls, as reflected in the test cd text file. The ”cdFunc” function, if used without any extra words/args, goes to the user’s home folder. If used with a directory name, it tries to navigate to that directory. If there’s a problem, it shows an error message. As reflected in the results, the shell functionality revolving around the cd command was successful, as it executed the cd ../ to reach the parent directory successfully, cd to a non-existent directory thereafter results in an error, and finally cd without any arguments provided results in changing to the home directory.
+
+List: The list command was tested under many cases, with given directories, the -a flag, and invalid directories as well, all cases being reflected in the test ls text file. The ”lsFunc” function shows the contents of the current folder. With the -a option, it shows all entries, even those starting with a dot. Otherwise, it uses ”findDot” to ignore these. It shows an error message if invalid arguments are provided in the ls command. The ”findDot” function is a helper for the ”lsFunc” function, filtering out folder entries that start with a dot (.). It tells the ”scandir” function to ignore these entries by returning 0. The test results show the following commands being executed and the results viewed all being the expected behavior, ls with no path or flags to print the contents of the lab2 directory, thereafter a ls -a which prints all contents in the current working directory similar to the previous, ls ../ to print the contents of the parent directory and finally ls with an invalid directory resulting in an error.
+
+All tests were proven to be successful, and all commands executed complied with the expected behaviors validating the successful development of the overall shell and related aspects.
+
+
+
+

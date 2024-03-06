@@ -1,0 +1,9 @@
+Problem and Solution: 
+
+The objective of the lab was to use C function pointers and practice using lower-level C memory representation. Along with this, we would use Linux system calls to retrieve system information and start a process.
+
+The first problem was creating functions to take a string as an input and then output pointers to the start of each word in the string. Also, add a ”\0” to the end of each word and count how many words there are.
+
+To solve this problem, two functions were created. The first function would take the pointer to a point in the string and an input character. This function would skip that character until it runs into something else. The purpose of this is to skip all the spaces in the string until it finds the next word. This first function is called ”skipChar”. The next function uses ”skipChar” to find each word in the string, then it counts up for each word and adds the pointer to the start of the word into the args array. This function is called ”splitCommandLine”. The next step is to implement the internal commands: exit, pwd, ls, and cd. This would be done starting in the main program when taking in an input string. First, the string is run through ”splitCommandLine” and we check if it has more than zero arguments. If it does then we call a function called ”doInternalCommand” with the arguments array of pointers and the number of arguments. This could then be used to find out which command has been input, and what comes after the command. We also had to add all the commands as different functions which is explained in the second document.
+
+Overall the goal was accomplished, the program is able to take in a command as a string and then decipher it and run the command as required.

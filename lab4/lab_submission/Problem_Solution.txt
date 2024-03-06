@@ -1,0 +1,14 @@
+Problem and Solution: The purpose of this lab is to manipulate information related to running processes in the /proc interface using a shell script. Specifically revolving around the manipulation of the Process Status (ps) command which is native to Linux, the command returns the current status of the processes that are running in the system. While the ps command provides a breadth of information, the fields of relevance for this specific lab are the process ID, resident set size of the process, the command the process is executing, the command line that was used to start the process, and the group ID of the process. By default, this command only lists processes belonging to the user, but the command can take flags that allow it to display others as well such as the -e flag to indicate that all processes in the system should be displayed. The specific flags the shell script is developed for as previously mentioned are the -rss, -comm, -command, and -group flags. An additional specified limitation of the script is only one of -comm or -command can be used in an execution of the shell script.
+
+The development of the shell script revolves around reading user input via the command line, interpreting which flags are inputted, or in the case where either an error case occurs, or no flags are present, handling them. This was done using a very simplistic if-else structure, with varying conditionals for the different cases, and when a flag was present the corresponding variable in the script was set to true.
+
+The next phase of development is the interaction with the process status interface to retrieve the corresponding data required for the various fields of information. While this entails many different aspects, an initial task of significant difficulty was the usage of RegEx in conjunction with the sed (stream editor) to read the lines of importance, extract the data needed, and assign the value as required. The first expression was the most tasking, whereas the others were very much a rinse and repeat, with minor differences. Another key aspect that took significant development was the username and group name mapping from the numeric values retrieved under the /proc interface and mapping to the corresponding symbolic names under /etc/psswd and /etc/group respectively. The final phase of development was the implementation of the formatting and printing of the various data fields into a file.
+
+The table below provides a breakdown of exit codes programmed into the script for various points of error and successful completion.
+
+Exit Code		Meaning
+	33		Unrecognized Flag Provided
+	66 		Both -command -comm flags detected
+	100 	Successful Execution
+	
+Several test cases are explored and elaborated in detail within the testing documentation. Overall the successful development of the shell script to interact with the /proc interface and retrieve process information is achieved.

@@ -1,0 +1,31 @@
+The purpose of this document is to present cases tested regarding the behavior of Linux commands cp, cat, and mv when executed and reflected by the Process Control Block (PCB). Specifically, we are interested in understanding how these commands result in changes surrounding the data under /proc/lab1. The objective is to study the the changes in information as the different processes occur, with notable identifiers/attributed being observed such as PID, UID, and GID.
+
+Test Case #1: /proc_results/lab1
+• Command Executed: cp /proc/lab1./proc_results
+• Purpose: To view the preliminary data in the /proc/lab1 file through the execution of a copy command.
+• Results: The command was executed successfully, with the file reflecting accurate information. Some initial observation being that the UID was 1007 denoting the identifier of the distinct user.
+
+Test Case #2: /proc_results/lab1_2
+• Command Executed: sudo cat /proc/lab1 >./proc_results/lab1_2
+• Purpose: To observe any differences from running a different command as well as running as a root user.
+• Results: It worked as expected with slight distinctions as the root user results in all UID and GID related fields being zero.
+
+Test Case #3 & #4: /proc_results/lab1_3 & /proc_results/lab1_4
+• Command Executed: cat /proc/lab1 >./proc_results/lab1_3
+• Purpose: To test how running cat as a non-root user affects the PCB information and to observe any change in UID.
+• Results: The UID changed to 1009, denoting a different user executed the command.
+
+Test Case #5: /proc_results/lab1_5
+• Command Executed: sudo mv /proc/lab1./proc_results_lab1_5
+• Purpose: To investigate whether the mv command can move /proc/lab1 out of the /proc directory.
+• Results: The command did not execute successfully due to access restrictions, but it was still able to copy the file as part of the mv process.
+
+Argument on Completeness of Testing
+The testing was comprehensive in examining various scenarios:
+1. Different Commands: Tests were conducted for cp, cat, and mv commands, covering a small range of operations one might perform within the Linux system.
+2. User Variability: Both root and non-root users were tested to check for variations in UID and GID.
+3. Error Scenarios: Test case #5 was valuable in understanding Linux’s access control mechanisms as the command did not execute as expected.
+
+However, there are some limitations:
+1. Lack of Linux knowledge: Additional commands couldn’t be tested due to less experience with Linux. Currently the results retrieved reflect the actual accessing of the proc/lab1 file through a cp or cat, but results for an ls or other cmd would be potentially noteworthy.
+2. State Consistency: All tests reported the state as “Running,” but other states were not evaluated.

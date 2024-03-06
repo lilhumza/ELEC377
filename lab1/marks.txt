@@ -1,0 +1,19 @@
+Lab 1 Mark: 10/10
+Documentation:
+Problem statement: 1/1
+Description of linking parts of lab together: 1/1
+Describing contents of reading function: 1/1
+
+- Super well-written and professional documentation—keep up the good work!
+
+Code Solution:
+Chain: 1.5/1.5
+Read solution: 1.5/1.5
+
+Clarity of Code:
+Formatting: 1/1
+Clarity in read statement: 1/1
+
+Testing: 2/2
+
+Great job! :)

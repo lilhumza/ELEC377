@@ -1,0 +1,13 @@
+Script started on 2023-10-09 19:16:59-04:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="116" LINES="11"]
+]0;NETID@elec377-tues-am-62: ~/elec377-tues-am-62/lab2[01;32mNETID@elec377-tues-am-62[00m:[01;34m~/elec377-tues-am-62/lab2[00m$ ls
+Makefile  [0m[01;32mhello[0m  hello.c  [01;32mshell[0m  shell.c  test_cd  test_ls  test_pwd
+]0;NETID@elec377-tues-am-62: ~/elec377-tues-am-62/lab2[01;32mNETID@elec377-tues-am-62[00m:[01;34m~/elec377-tues-am-62/lab2[00m$ ls -a
+[0m[01;34m.[0m  [01;34m..[0m  Makefile  [01;32mhello[0m  hello.c  [01;32mshell[0m  shell.c  test_cd  test_ls  test_pwd
+]0;NETID@elec377-tues-am-62: ~/elec377-tues-am-62/lab2[01;32mNETID@elec377-tues-am-62[00m:[01;34m~/elec377-tues-am-62/lab2[00m$ ls ../
+[0m[01;34mlab0[0m  [01;34mlab1[0m  [01;34mlab2[0m
+]0;NETID@elec377-tues-am-62: ~/elec377-tues-am-62/lab2[01;32mNETID@elec377-tues-am-62[00m:[01;34m~/elec377-tues-am-62/lab2[00m$ ls bananswirl
+ls: cannot access 'bananswirl': No such file or directory
+]0;NETID@elec377-tues-am-62: ~/elec377-tues-am-62/lab2[01;32mNETID@elec377-tues-am-62[00m:[01;34m~/elec377-tues-am-62/lab2[00m$ exit
+exit
+
+Script done on 2023-10-09 19:17:17-04:00 [COMMAND_EXIT_CODE="2"]

@@ -1,0 +1,9 @@
+Problem and Solution: The objective of this lab is to create a producer-consumer buffer. The starting code includes the main function with the functions producer() and consumer(). Each of the producer and consumer threads calls its respective functions as required through program processing and execution.
+
+The first task was completing the respective consumer and producer functions such that they are able to create threads, and the use of the pthread mutex functions results in manipulating semaphores such that we are able to lock, unlock and await critical sections as needed for processing tasks. Following the comments as well as provided documentation was sufficient for the completion of the aforementioned tasks.
+
+The producer function is created with the objective to read from the source data file and write to the buffer. This is done by first opening the file and then going into a while loop such that it stays in it as long as the file is being actively read. At the start of each loop, the thread is locked as the program goes into its critical section, then becomes unlocked at the end of the loop. Along with this, there is one more instance after the while loop where it must be locked to decrease the number of producers. Then at the end of the function, the file is closed. The consumer function works in an almost identical way to the producer function with a while loop. The only differing factor is the switching between producer and consumer threads as denoted in the code structure.
+
+While the lab documentation provided details regarding the sample data as well as creating more sample data and manipulating the trials such that there is more variety or results, additional data was not created/generated.
+
+Overall the functions were successful and produced proper results for the test cases as detailed in the testing results documentation.

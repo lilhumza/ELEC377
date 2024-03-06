@@ -1,0 +1,10 @@
+Lab 2 Marking 
+Mark: 8.5/10 
+
+Documentation: 3/3.5
+- Documentation should be a txt file
+Testing Docs: 3/3.5
+- Should be a txt file created
+Code Correctness: 1/1.5
+- exit function not checking if args[1] is a number if nargs != 1
+Code Clarity (organization): 1.5/1.5

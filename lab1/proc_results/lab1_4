@@ -1,0 +1,11 @@
+Current Process PCB Information
+Name = cat
+PID = 78569
+PPID = 72839
+State = Running
+Real UID = 1009
+Effective UID = 1009
+Saved UID = 1009
+Real GID = 1000
+Effective GID = 1000
+Saved GID = 1000

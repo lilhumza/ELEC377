@@ -1,0 +1,14 @@
+Test Cases and Solution: Several cases were tested for the various thread counts used to process the input data. All tests can be seen under the test results directory with the respective trials being placed in a trial subdirectory, the numbers corresponding to the testNum, producer threads, and consumer threads.
+Note: Only certain trials are reported upon, as they depict noticeable trends of importance.
+
+trial 1_1_1: When having 1 producer and 1 consumer thread, what is seen is the simple cloning of the t10 data file. What this signifies is that there is a direct 1:1 relationship between the threads resulting in a complete clone of the data input. This is being used more as a base case for further analysis of other cases below.
+
+trial 1_1_2: When having 1 producer and 2 consumer threads, what is seen is the simple division of the t10 data file into out10 and out11. Where out11 is first populated with a value of 10 thereafter out10 is populated with 20 and the alternating between each consumer continues till all of t10 has been processed. What this signifies is the 1 parent thread switches with each line of data in t10 between the 2 consumer threads and as reflected in the results completes a magnitude of processing in that respective consumer thread before switching again until all data has been read/processed.
+
+trial 1_2_3: When having 2 producer and 3 consumer threads, what is seen is the t11 data is first processed such that the consumer threads alternate in the order of out11 out12 then out10. After completing t11 data processing, then t10 is processed similarly. What is seen is the unique priority/order of processing that occurs when there are more consumer threads than producers.
+
+trial 1_3_3: Similar to the very previous trial of 2 producers and 3 consumer threads, when there are 3 producers and 3 consumers what is seen is the line-by-line processing of t12, t11, and t10 respectively across the consumer threads in the order of out11, out12, out10.
+
+What is successfully observed is the relationship between a producer thread and a consumer thread, as well as how having more or less of certain threads can affect processing functionalities. From another perspective what this provides a better insight into is having more than enough resources - having unallocated or inefficiently used resources, to not having enough resources.
+
+

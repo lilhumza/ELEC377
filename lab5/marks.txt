@@ -1,0 +1,12 @@
+Tuesday AM group 62
+
+Solution Documentation 4/3
+
+Testing Documentation 2/2
+
+Code Correctness 3/3
+
+Code Clarity 2/2
+
+Total: 11/10
+Comment: bonus mark for noting and using md5 variable.

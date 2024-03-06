@@ -1,0 +1,11 @@
+Tuesday AM group 62
+
+Documentation 3/3
+
+Code Correctness 2/2
+
+Style 2/2
+
+Testing Results 3/3
+
+Total: 10/10
